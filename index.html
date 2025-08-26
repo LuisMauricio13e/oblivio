@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oblivio | Loja</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header class="topo">
+    <h1 class="topo--titulo">🌀 Oblivio</h1>
+    <div class="topo--acoes">
+      <button class="btn-login" onclick="window.location.href='login.html'">Login</button>
+      <button class="btn-carrinho">Carrinho</button>
+    </div>
+  </header>
+
+  <!-- Categorias -->
+  <div class="categorias">
+    <button data-categoria="artesanato" class="categoria-ativa">Artesanato</button>
+    <button data-categoria="bijuteria">Bijuteria</button>
+    <button data-categoria="materiais">Materiais</button>
+    <button data-categoria="decoracao">Decoração</button>
+  </div>
+
+  <!-- Produtos -->
+  <main class="produtos">
+    <div class="card-produto" data-categoria="bijuteria">
+      <img src="https://images.unsplash.com/photo-1611078485200-7b0d128b6e71?auto=format&fit=crop&w=500&q=60" alt="Colar artesanal">
+      <h3>Colar Artesanal</h3>
+      <p>Bijuteria feita à mão</p>
+      <div class="preco">R$ 45,00</div>
+      <button>Adicionar</button>
+    </div>
+
+    <div class="card-produto" data-categoria="materiais">
+      <img src="https://images.unsplash.com/photo-1587049352846-39ef8432f024?auto=format&fit=crop&w=500&q=60" alt="Linha colorida">
+      <h3>Linha Colorida</h3>
+      <p>Material para artesanato</p>
+      <div class="preco">R$ 12,00</div>
+      <button>Adicionar</button>
+    </div>
+
+    <div class="card-produto" data-categoria="decoracao">
+      <img src="https://images.unsplash.com/photo-1595433707802-d2c312c7c558?auto=format&fit=crop&w=500&q=60" alt="Vaso decorativo">
+      <h3>Vaso Decorativo</h3>
+      <p>Decoração para ambiente</p>
+      <div class="preco">R$ 85,00</div>
+      <button>Adicionar</button>
+    </div>
+
+    <div class="card-produto" data-categoria="bijuteria">
+      <img src="https://images.unsplash.com/photo-1606813905112-10c3bdb1f5d4?auto=format&fit=crop&w=500&q=60" alt="Brincos artesanais">
+      <h3>Brincos Artesanais</h3>
+      <p>Bijuteria delicada</p>
+      <div class="preco">R$ 38,00</div>
+      <button>Adicionar</button>
+    </div>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>

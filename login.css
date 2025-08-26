@@ -1,0 +1,136 @@
+/* login.css - tema gótico/artesanal */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Uncial+Antiqua&display=swap');
+
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+}
+
+body { 
+  font-family: 'Roboto', sans-serif; 
+  background: linear-gradient(135deg, #0B1D3A 0%, #091730 100%); 
+  color: #E6D3B3; 
+  min-height: 100vh; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  transition: opacity 0.5s ease; 
+}
+
+/* Container centralizado */
+.login-container { 
+  background-color: #0D254A; 
+  padding: 2rem 2.5rem; 
+  border-radius: 12px; 
+  width: 100%; 
+  max-width: 400px; 
+  box-shadow: 0 8px 30px rgba(0,0,0,0.6); 
+}
+
+/* Logo gótica */
+.logo { 
+  font-family: 'Uncial Antiqua', cursive; 
+  font-size: 2.5rem; 
+  text-align: center; 
+  color: #ff6b35; 
+  margin-bottom: 1.5rem; 
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.5); 
+}
+
+/* Mensagem de feedback */
+.mensagem { 
+  padding: 0.7rem 1rem; 
+  border-radius: 8px; 
+  text-align: center; 
+  margin-bottom: 1rem; 
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+}
+.mensagem.show { opacity: 1; }
+.mensagem.sucesso { background-color: #28a745; color:#fff; }
+.mensagem.erro { background-color: #ff4444; color:#fff; }
+.mensagem.info { background-color: #0D6EFD; color:#fff; }
+
+/* Formulário */
+form { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 1rem; 
+}
+
+.campo-grupo { 
+  display: flex; 
+  flex-direction: column; 
+}
+
+.campo-grupo label { 
+  margin-bottom: 0.3rem; 
+  font-weight: bold; 
+}
+
+.campo-grupo input { 
+  padding: 0.65rem 0.8rem; 
+  border-radius: 8px; 
+  border: none; 
+  font-size: 1rem; 
+  outline: none; 
+  transition: transform 0.2s ease, box-shadow 0.2s ease; 
+}
+
+.campo-grupo input:focus { 
+  transform: scale(1.02); 
+  box-shadow: 0 0 8px rgba(255,107,53,0.4); 
+}
+
+.erro-campo { 
+  font-size: 0.8rem; 
+  color: #ff4444; 
+  margin-top: 0.2rem; 
+}
+
+/* Botão Entrar */
+#btnEntrar { 
+  padding: 0.75rem; 
+  border-radius: 8px; 
+  border: none; 
+  background-color: #ff6b35; 
+  color: #fff; 
+  font-weight: bold; 
+  cursor: pointer; 
+  transition: transform 0.2s ease, box-shadow 0.2s ease; 
+}
+
+#btnEntrar:hover { 
+  transform: translateY(-2px); 
+  box-shadow: 0 6px 15px rgba(255,107,53,0.5); 
+}
+
+/* Links de cadastro e voltar */
+.cadastro-link { 
+  font-size: 0.85rem; 
+  text-align: center; 
+}
+
+.cadastro-link a { 
+  color: #ff6b35; 
+  text-decoration: none; 
+  font-weight: bold; 
+  transition: color 0.2s ease; 
+}
+
+.cadastro-link a:hover { 
+  color: #fff; 
+  text-decoration: underline; 
+}
+
+/* Botão loading (simples) */
+#btnEntrar.loading::after { 
+  content: ' ⏳'; 
+}
+
+/* Responsividade */
+@media(max-width: 480px) { 
+  .login-container { padding: 1.5rem 1.5rem; } 
+  .logo { font-size: 2rem; } 
+}

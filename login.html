@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oblivio | Login</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <div class="login-container">
+    <h1 class="logo">🌀 Oblivio</h1>
+    <div id="mensagem" class="mensagem"></div>
+    
+    <form id="loginForm" novalidate>
+      <div class="campo-grupo">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+        <small id="email-erro" class="erro-campo"></small>
+      </div>
+
+      <div class="campo-grupo">
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" placeholder="Sua senha" required />
+        <small id="senha-erro" class="erro-campo"></small>
+      </div>
+
+      <button type="submit" id="btnEntrar">Entrar</button>
+      <p class="cadastro-link">
+        Ainda não tem conta? <a href="#">Cadastre-se</a>
+      </p>
+      <p class="cadastro-link">
+        <a href="index.html">← Voltar para a loja</a>
+      </p>
+    </form>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>
